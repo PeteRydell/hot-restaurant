@@ -1,0 +1,77 @@
+<!--
+Landing page
+Jumbotron with "Hot Restaurant"
+Header notifying users of how many tables are available and to book seat
+"view tables button" sending users to the reservation and waitlistpage
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hot Restaurant</title>
+  <!-- CSS & JS -->
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1><span class="fas fa-fire"></span>Hot Restaurant</h1>
+      <hr>
+      <h3>We only have 5 tables! Book your seat before they all are gone!</h3>
+      <a href="/add"><button class="btn btn-danger btn-lg"><span class="fa fa-plus"></span> Add New
+          Character</button></a>
+      <a href="/api/characters"><button class="btn btn-danger btn-lg"><span
+            class="fa fa-eye"></span> All Characters</button></a>
+    </div>
+    <div class="row">
+
+      <div class="col-12">
+
+        <div class="card mb-4">
+          <div class="card-header">
+            <h3><strong>Character Search</strong></h3>
+          </div>
+          <div class="card-body">
+            <input type="text" id="character-search" class="form-control">
+            <br>
+            <div class="text-right">
+              <button type="submit" class="btn btn-primary btn-md" id="search-btn"><span
+                  class="fa fa-search"></span> Search
+                Your Feelings. You know it is true.</button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3><strong>Character Statistics</strong></h3>
+          </div>
+          <div class="card-body">
+            <h2 id="name">Yoda</h2>
+            <div id="stats">
+              <h3><strong>Role:</strong> <span id="role">Jedi Master</span></h3>
+              <h3><strong>Age:</strong> <span id="age">900</span></h3>
+              <h3><strong>Force Points:</strong> <span id="force-points">2000</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
