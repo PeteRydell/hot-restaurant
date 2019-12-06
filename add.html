@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hot Restaurant | View Tables</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/5b7ccd430b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+          <h1 class="text-center"><i class="fas fa-fire"></i> <strong>Hot Restaurant</strong></h1>
+          <h3 class="text-center">Make Your Reservations</h3>
+          <hr>
+        <div class="text-center">
+            <a href="/reserve"><button class="btn btn-success btn-lg"><span class="fa fa-plus"></span> Make Reservation</button></a>
+            <a href="/"><button class="btn btn-light btn-lg"></span> <i class="fas fa-home"></i></button></a>
+        </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12">
+      
+              <div class="card">
+                <div class="card-header">
+                  <h3>Book Your Reservation</h3>
+                </div>
+                <div class="card-body">
+                  <form method="POST" role="form">
+      
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name">
+                    </div>
+      
+                    <div class="form-group">
+                      <label for="phone-number">Phone Number</label>
+                      <input type="text" class="form-control" id="phone-number">
+                    </div>
+      
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="text" class="form-control" id="email">
+                    </div>
+      
+                    <div class="form-group">
+                      <label for="member-id">HotRestaurant Club Member ID</label>
+                      <input type="text" class="form-control" id="member-id">
+                    </div>
+      
+                  </form>
+                  <br>
+                  <div class="text-right">
+                    <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="fa fa-fire"></span> Book Now!</button>
+                  </div>
+                </div>
+              </div>
+
+    <footer class="footer">
+        <div class="container">
+            <hr>
+            <p>Control Panel</p>
+            <!-- Links to clear tables and JSON objects go here -->
+        </div>
+    </footer>
+</body>
+</html>
